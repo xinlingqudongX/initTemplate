@@ -1,0 +1,39 @@
+{
+    "extends": "eslint-config-egg/typescript",
+    "parserOptions": {
+        "project": "./tsconfig.json"
+    },
+    "rules": {
+        "indent": ["off", 4],
+        "@typescript-eslint/indent": ["off", 4],
+        "@typescript-eslint/no-unused-vars": "off",
+        "@typescript-eslint/no-empty-function": "off",
+        "indent-legacy": ["off", 4],
+        "no-unused-vars": "off",
+        "valid-jsdoc": 0,
+        "require-jsdoc": "off",
+        "array-bracket-spacing": "off",
+        "no-bitwise": [
+            "error",
+            { "allow": ["~", "&", "|", ">>>", "<<", ">>"] }
+        ],
+        "no-var": "off",
+        "no-case-declarations": "off",
+        "array-callback-return": "off",
+        "object-shorthand": "off",
+        "new-parens": "off",
+        "keyword-spacing": "off",
+        "no-empty-function": "off",
+        "no-new-func": "off",
+        "space-before-function-paren": "off",
+        "@typescript-eslint/no-var-requires": "off",
+        "jsdoc/require-returns-type": "off",
+        "jsdoc/check-tag-names": "off",
+        "jsdoc/check-param-names": "off",
+        "jsdoc/require-returns-description": "off",
+        "jsdoc/require-param-description": "off",
+        "no-spaced-func": "off",
+        "@typescript-eslint/ban-types": "off",
+        "newline-per-chained-call": "off"
+    }
+}

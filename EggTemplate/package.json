@@ -1,0 +1,63 @@
+{
+  "name": "EggTemplate",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "egg": {
+    "typescript": true,
+    "declarations": true
+  },
+  "scripts": {
+    "start": "egg-scripts start --daemon --title=egg-server-EggTemplate",
+    "stop": "egg-scripts stop --title=egg-server-EggTemplate",
+    "dev": "egg-bin dev",
+    "debug": "egg-bin debug",
+    "test-local": "egg-bin test",
+    "test": "npm run lint -- --fix && npm run test-local",
+    "cov": "egg-bin cov",
+    "tsc": "ets && tsc -p tsconfig.json",
+    "ci": "npm run lint && npm run cov && npm run tsc",
+    "autod": "autod",
+    "lint": "eslint . --ext .ts --resolve-plugins-relative-to .",
+    "clean": "ets clean"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.7",
+    "egg": "^3.6.0",
+    "egg-cors": "^2.2.3",
+    "egg-redis": "^2.4.0",
+    "egg-scripts": "^2.17.0",
+    "egg-ts-helper": "^1.33.0",
+    "reflect-metadata": "^0.1.13"
+  },
+  "devDependencies": {
+    "@eggjs/tsconfig": "^1.1.0",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^18.11.12",
+    "@types/supertest": "^2.0.12",
+    "autod": "^3.0.1",
+    "autod-egg": "^1.1.0",
+    "egg-bin": "^5.5.0",
+    "egg-ci": "^2.2.0",
+    "egg-mock": "^5.3.0",
+    "eslint": "^8.29.0",
+    "eslint-config-egg": "^12.1.0",
+    "tslib": "^2.4.1",
+    "typescript": "^4.9.4"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "ci": {
+    "version": "14, 16, 18"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "eslintIgnore": [
+    "coverage"
+  ],
+  "author": "",
+  "license": "MIT"
+}
