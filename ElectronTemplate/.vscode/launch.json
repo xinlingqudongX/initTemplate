@@ -1,0 +1,33 @@
+{
+    // 使用 IntelliSense 了解相关属性。
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Electron调试render",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/electron",
+            "skipFiles": ["<node_internals>/**"],
+            "type": "chrome",
+            "webRoot": "${workspaceFolder}",
+            "sourceMaps": true,
+            "sourceMapPathOverrides": {
+                "meteor://💻app/*": "${workspaceFolder}/*",
+                "webpack:///./~/*": "${workspaceFolder}/node_modules/*",
+                "webpack://?:*/*": "${workspaceFolder}/*"
+            },
+            "userDataDir": "${workspaceFolder}/.vscode/electron-user-data"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Electron调试main",
+            "cwd": "${workspaceFolder}",
+            "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/electron",
+            "args": ["."],
+            "skipFiles": ["<node_internals>/**"]
+        }
+    ]
+}
