@@ -1,0 +1,15 @@
+{
+  "name": "chromeextensiontemplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/chrome": "^0.0.204",
+    "@types/node": "^18.11.13"
+  }
+}
