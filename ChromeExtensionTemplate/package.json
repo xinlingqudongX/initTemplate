@@ -2,16 +2,19 @@
     "name": "chromeextensiontemplate",
     "version": "1.0.0",
     "description": "",
-    "main": "index.js",
+    "main": "main.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "dev": "tsc --noEmit && vite dev"
+        "dev": "tsc --noEmit && vite dev",
+        "build": "vite build --debug --watch",
+        "preview": "vite preview --debug"
     },
     "author": "",
     "license": "MIT",
     "devDependencies": {
         "@types/chrome": "^0.0.204",
         "@types/node": "^18.11.13",
-        "vite": "^4.0.0"
+        "vite": "^4.0.0",
+        "vite-plugin-debug": "^1.0.1"
     }
 }
