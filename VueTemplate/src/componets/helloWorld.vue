@@ -1,9 +1,13 @@
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref, defineProps } from 'vue';
 
 defineProps<{ msg: string }>();
 
 const count = ref(0);
+
+const test = function (...args: any[]) {
+    console.log(args);
+};
 </script>
 
 <template>
@@ -28,7 +32,15 @@ const count = ref(0);
         <a href="https://v3.vuejs.org/" target="_blank">Vue 3 Docs</a>
     </p>
 
-    <button type="button" @click="count++">count is: {{ count }}</button>
+    <button
+        type="button"
+        @click="
+            test(1, 2, { a: 3 });
+            count++;
+        "
+    >
+        count is: {{ count }}
+    </button>
     <p>
         Edit
         <code>components/HelloWorld.vue</code> to test hot module replacement.
