@@ -8,6 +8,8 @@
     "devDependencies": {
         "@types/node": "^18.11.12",
         "@vitejs/plugin-vue": "^4.0.0",
+        "eslint": "^8.30.0",
+        "eslint-config-prettier": "^8.5.0",
         "unplugin-auto-import": "^0.12.1",
         "unplugin-vue-components": "^0.22.12",
         "vite": "^4.0.0",
