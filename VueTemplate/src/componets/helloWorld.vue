@@ -1,9 +1,8 @@
 <script setup lang="ts">
 import { ref, defineProps } from 'vue';
 
-defineProps<{ msg: string }>();
-
 const count = ref(0);
+const msg = ref('你好,世界');
 
 const test = function (...args: any[]) {
     console.log(args);
