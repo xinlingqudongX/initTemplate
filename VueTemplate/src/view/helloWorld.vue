@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, defineProps } from 'vue';
+import { ref } from 'vue';
 
 const count = ref(0);
 const msg = ref('你好,世界');
